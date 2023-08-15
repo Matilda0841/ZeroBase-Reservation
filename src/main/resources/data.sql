@@ -1,0 +1,6 @@
+CREATE TABLE TEST(
+    id INTEGER,
+    text VARCHAR(25)
+);
+
+DROP TABLE test;
