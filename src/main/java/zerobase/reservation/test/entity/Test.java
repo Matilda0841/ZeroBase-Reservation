@@ -19,5 +19,7 @@ public class Test {
     this.id = id;
     this.text = text;
   }
-public Test(){}
+
+  public Test() {
+  }
 }

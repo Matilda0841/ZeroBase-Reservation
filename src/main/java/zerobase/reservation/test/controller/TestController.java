@@ -1,14 +1,14 @@
 package zerobase.reservation.test.controller;
 
+import zerobase.reservation.test.entity.Test;
+import zerobase.reservation.test.dto.TestDto;
+import zerobase.reservation.test.repository.TestRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-import zerobase.reservation.test.TestDto;
-import zerobase.reservation.test.entity.Test;
-import zerobase.reservation.test.dto.TestDto;
-import zerobase.reservation.test.repository.TestRepository;
 
 @RestController
 public class TestController {
