@@ -28,19 +28,19 @@ public class MemberController {
   }
 
   // 특정 사용자 조회
-  @GetMapping("/read")
+  @GetMapping("/read/{id}")
   public MemberEntity getMember(@PathVariable Long mbId){
     return memberService.readMember(mbId);
   }
 
   // 사용자 업데이트
-  @PutMapping("/update")
+  @PutMapping("/update/{id}")
   public MemberEntity updateMember(@PathVariable Long mbId ,@RequestBody MemberEntity memberEntity){
     return memberService.updateMember(mbId,memberEntity);
   }
 
   // 사용자 삭제하기
-  @DeleteMapping("/delete")
+  @DeleteMapping("//delete/{id}")
   public void deleteMember(@PathVariable Long mbId){
     memberService.deleteMember(mbId);
   }

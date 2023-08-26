@@ -28,19 +28,19 @@ public class PartnerController {
   }
 
   // 특정 사용자 조회
-  @GetMapping("/read")
+  @GetMapping("/read/{id}")
   public PartnerEntity getPartner(@PathVariable Long ptId){
     return partnerService.readPartner(ptId);
   }
 
   // 사용자 업데이트
-  @PutMapping("/update")
+  @PutMapping("/update/{id}")
   public PartnerEntity updateMember(@PathVariable Long ptId ,@RequestBody PartnerEntity partnerEntity){
     return partnerService.updatePartner(ptId,partnerEntity);
   }
 
   // 사용자 삭제하기
-  @DeleteMapping("/delete")
+  @DeleteMapping("//delete/{id}")
   public void deleteMember(@PathVariable Long ptId){
     partnerService.deletePartner(ptId);
   }
